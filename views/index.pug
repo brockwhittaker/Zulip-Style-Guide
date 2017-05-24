@@ -1,14 +1,17 @@
 html
     head
-        link(rel="stylesheet" href="/css/main.css")
+        include head.pug
     body
         #app
             include sidebar.pug
+            #markdown(ref="markdownContent")
     
         
         script(src="/js/vendor/require.js")
         script(src="/js/vendor/vue.min.js")
         script(src="/js/vendor/markdown.js")
         script(src="/js/vendor/router.js")
+        script(src="/js/vendor/ajax.js")
         script(src="/js/store.js")
+        script(src="/js/render-markdown.js")
         script(src="/js/main.js")

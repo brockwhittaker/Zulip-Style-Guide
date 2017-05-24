@@ -1,17 +1,19 @@
 :root {
-    --main-text-color: #2b2e38;
-    --light-text-color: #cdd2e2;
+    --main-text-color: #383c47;
+    --med-text-color: #797d8b;
+    --light-text-color: #d1d4df;
 
     --dark-bg-color: #2b2e38;
 
     --radius: 4px;
 }
 
-html, body, * {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-
+* {
     -webkit-font-smoothing: antialiased;
-    vertical-align: top;
+}
+
+html, body, input, button, select {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 body {
@@ -21,12 +23,33 @@ body {
 
 #sidebar {
     display: inline-block;
+    vertical-align: top;
+    width: 260px;
     padding: 20px;
 
     background-color: var(--dark-bg-color);
     color: var(--light-text-color) !important;
 
     height: calc(100vh - 40px);
+}
+
+#sidebar .logo-container {
+    margin-bottom: 20px;
+}
+
+#sidebar .logo-container #zulip_logo {
+    display: inline-block;
+
+    width: 30px;
+    height: 30px;
+
+    background-size: contain;
+}
+
+#sidebar .logo-container span {
+    vertical-align: top;
+    margin-left: 10px;
+    font-size: 1.55em;
 }
 
 #sidebar .sidebar-category .title {
@@ -52,4 +75,107 @@ body {
 #sidebar li:hover {
     background-color: rgba(255,255,255,0.2);
     border-radius: var(--radius);
+}
+
+#markdown {
+    display: inline-block;
+    vertical-align: top;
+    padding: 20px 100px;
+    margin-right: -4px;
+    width: calc(100vw - 300px - 200px);
+}
+
+#markdown h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+#markdown h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: var(--med-text-color);
+}
+
+#markdown p {
+    line-height: 1.7;
+}
+
+#markdown hr {
+    margin: 20px 0px;
+
+    border: none;
+    border-bottom: 1px solid var(--light-text-color);
+}
+
+#markdown orb {
+    display: inline-block;
+    vertical-align: middle;
+
+    width: 15px;
+    height: 15px;
+
+    border-radius: 8px;
+
+    box-shadow: inset 0px 0px 1px rgba(0,0,0,0.5);
+}
+
+#markdown orb.large {
+    vertical-align: top;
+
+    text-align: center;
+
+    font-size: 0.7em;
+    font-weight: 600;
+
+    width: 60px;
+    height: 0px;
+    padding: 30px 10px 50px 10px;
+
+    border-radius: 45px;
+
+    box-shadow: inset 0px 0px 1px rgba(0,0,0,0.5);
+}
+
+#markdown orb.large.white {
+    color: #fff;
+}
+
+#markdown orb.large::after {
+    content: attr(data-hex);
+    display: block;
+    font-size: 0.5em;
+    margin-top: -5px;
+
+    opacity: 0.5;
+}
+
+#markdown .font-types {
+    margin: 20px 0px;
+}
+
+#markdown .font-types * {
+    padding: 3px 0px;
+}
+
+#markdown .icons .icon {
+    width: 100px;
+    margin: 20px 0px;
+}
+
+#markdown .icon-set i.fa {
+    width: 30px;
+    padding: 8px 0px;
+}
+
+#markdown .icon-set span {
+    position: relative;
+    top: 2px;
+    color: var(--med-text-color);
+}
+
+#markdown p code {
+    font-size: 1.2em;
+    font-weight: 600;
+
+    color: rgb(200, 98, 132);
 }

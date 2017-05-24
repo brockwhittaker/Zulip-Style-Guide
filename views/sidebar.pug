@@ -1,4 +1,5 @@
 #sidebar
+    include sidebar-header.pug
     div(v-for="(list, name) in sidebar")
         .sidebar-category
             .title {{ list.name }}
