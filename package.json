@@ -1,0 +1,23 @@
+{
+  "name": "styleguide",
+  "version": "1.0.0",
+  "description": "A style guide for Zulip.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brockwhittaker/Zulip-Style-Guide.git"
+  },
+  "author": "Brock Whittaker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brockwhittaker/Zulip-Style-Guide/issues"
+  },
+  "homepage": "https://github.com/brockwhittaker/Zulip-Style-Guide#readme",
+  "dependencies": {
+    "express": "^4.15.3",
+    "pug": "^2.0.0-rc.1"
+  }
+}

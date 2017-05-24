@@ -1,0 +1,7 @@
+#sidebar
+    div(v-for="(list, name) in sidebar")
+        .sidebar-category
+            .title {{ list.name }}
+            ul
+                a(v-for="item in list.items" :href="'#/' + name + '/' + item")
+                    li {{ item }}
