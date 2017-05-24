@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" href="public/css/main.css">
+    </head>
+    <body>
+        <div id="app">
+            <h1>Test Style Guide</h1>
+
+            <div id="sidebar">
+                <div v-for="(list, name) in sidebar">
+                    <div class="sidebar-category">{{ name }}</div>
+                </div>
+            </div>
+        </div>
+        <script src="public/js/vendor/vue.min.js" charset="utf-8"></script>
+        <script src="public/js/vendor/require.js" charset="utf-8"></script>
+        <script src="public/js/store.js" charset="utf-8"></script>
+        <script src="public/js/main.js" charset="utf-8"></script>
+    </body>
+</html>
