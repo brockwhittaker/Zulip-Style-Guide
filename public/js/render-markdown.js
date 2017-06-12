@@ -7,6 +7,25 @@ var RenderMarkdown = (showdown) => {
 
     var map = {};
 
+    var funcs = {
+        renderShadows: function (container, shadowDOM, styleSheets) {
+            if (!container || !shadowDOM) {
+                console.warn("All three arguments must be present.");
+                return;
+            }
+
+            let shadows = container.querySelectorAll(".shadow");
+
+            for (let x = 0; x < shadows.length; x++) {
+                let html = shadows[x].innerHTML,
+                    shadow = shadowDOM(shadows[x]);
+
+                styleSheets.forEach(o => shadow.addStyleSheet(o));
+                shadow.html(html);
+            }
+        }
+    };
+
     var prototype = {
         // control whether or not markdown files should be cached or whether
         // they should be reloaded again.
@@ -42,11 +61,32 @@ var RenderMarkdown = (showdown) => {
 
         html: function (html) {
             if (this.container) {
-                console.log(html);
                 this.container.innerHTML = html || "";
+
+                funcs.renderShadows(
+                    this.container,
+                    this.shadow.shadowDOM,
+                    this.shadow.styles
+                );
             }
 
             return this;
+        },
+
+        shadow: {
+            styles: [],
+
+            init: function (shadowDOM) {
+                this.shadowDOM = shadowDOM;
+
+                return this;
+            },
+
+            addStyleSheet: function (styles) {
+                this.styles.push(styles);
+
+                return this;
+            }
         }
     };
 
