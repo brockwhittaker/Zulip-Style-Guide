@@ -8,7 +8,7 @@ The primary brand color for Zulip is a medium green <orb style="background-color
 
 ## Primary Colors
 
-<orb class="large" style="background-color: #52c2af" data-hex="#52c2af">sea-green</orb>
+<orb class="large white" style="background-color: #52c2af" data-hex="#52c2af">sea-green</orb>
 <orb class="large" style="background-color: #eee" data-hex="#eee">light-grey</orb>
 <orb class="large white" style="background-color: #333" data-hex="#333">body-text</orb>
 

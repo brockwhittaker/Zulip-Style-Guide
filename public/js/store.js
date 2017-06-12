@@ -21,8 +21,8 @@ require.register("store", (() => {
         "components": {
             name: "Components",
             items: [
-                "Blocks and Cards",
                 "Form Controls",
+                "Blocks and Cards",
                 "Headers and Footers",
                 "Icons",
                 "Lists",
