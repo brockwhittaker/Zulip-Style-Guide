@@ -7,7 +7,11 @@ require.register("store", (() => {
             items: []
         },
         "guidelines": {
-            name: "Guidelines"
+            name: "Guidelines",
+            items: [
+                "Overview",
+                "Logo",
+            ]
         },
         "styles": {
             name: "Styles",

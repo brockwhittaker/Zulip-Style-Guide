@@ -181,6 +181,14 @@ body {
     margin: 20px 0px;
 }
 
+#markdown .icons .large-icon {
+    width: 200px;
+}
+
+#markdown .icons {
+    margin-left: 40px;
+}
+
 #markdown .icon-set i.fa {
     width: 30px;
     padding: 8px 0px;
