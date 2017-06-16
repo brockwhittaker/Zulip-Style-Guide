@@ -7,9 +7,14 @@
 The Zulip open source project has logos for the Zulip brand, along with font and emoji sets such as **FontAwesome** and the **Android Emoji** set.
 
 ## Zulip icons
+
+We have three versions of our logo; standard, monochrome, and monochrome inverted (<b>note that it includes the white circle outline</b>).
+For more information on how to use these assets, please refer to our <a href="#/guidelines/Logo">logo guidelines</a>.
+
 <div class="icons">
     <img class="icon" src="/assets/zulip-icon.png" />
     <img class="icon" src="/assets/zulip-icon.svg" />
+    <img class="icon" src="/assets/zulip-icon-white.svg" />
 </div>
 
 ## Icon set
