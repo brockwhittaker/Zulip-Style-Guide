@@ -1,10 +1,10 @@
 :root {
-    --main-text-color: #383c47;
-    --med-text-color: #797d8b;
-    --light-text-color: #d1d4df;
+    --main-text-color: #58668b;
+    --med-text-color: #00aa93;
+    --light-text-color: #dadada;
 
-    --muted-bg-color: #373d53;
-    --dark-bg-color: #2b2e38;
+    --muted-bg-color: #474753;
+    --dark-bg-color: #343354;
 
     --radius: 4px;
 }
@@ -114,6 +114,10 @@ body {
 
 #markdown p {
     line-height: 1.7;
+}
+
+#markdown a {
+	color: #7997e6;
 }
 
 #markdown hr {
