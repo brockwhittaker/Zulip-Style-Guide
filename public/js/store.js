@@ -11,6 +11,7 @@ require.register("store", (() => {
             items: [
                 "Overview",
                 "Logo",
+                "Your Product"
             ]
         },
         "styles": {
