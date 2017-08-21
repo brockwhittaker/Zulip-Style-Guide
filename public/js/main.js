@@ -41,5 +41,13 @@
         });
     });
 
+    router.add("getting-started/:component", (e) => {
+        let { component } = e.params;
+
+        renderMarkdown.fetch("/getting-started/" + component, (res) => {
+            renderMarkdown.html(res);
+        });
+    });
+
     router.init();
 }());

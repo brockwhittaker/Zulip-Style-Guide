@@ -4,7 +4,9 @@ require.register("store", (() => {
     store.sidebar = {
         "getting-started": {
             name: "Getting Started",
-            items: []
+            items: [
+            "Branding Pack"
+            ]
         },
         "guidelines": {
             name: "Guidelines",
