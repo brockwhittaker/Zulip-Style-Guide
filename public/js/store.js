@@ -10,6 +10,7 @@ require.register("store", (() => {
             name: "Guidelines",
             items: [
                 "Overview",
+                "Identity",
                 "Logo",
                 "Your Product"
             ]
