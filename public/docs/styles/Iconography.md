@@ -98,5 +98,5 @@ We heavily utilize the **FontAwesome** v4 icon set across the entire site.
     <i class="fa fa-shopping-bag"></i>
     <i class="fa fa-shopping-basket"></i>
     <i class="fa fa-shopping-cart"></i>
-    <span>... and many more.</span>
+    <nobr><span>... and many more.</span></nobr>
 </div>
