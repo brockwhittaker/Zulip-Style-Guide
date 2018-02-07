@@ -1,4 +1,4 @@
-# Forms, Buttons and Inputs
+# Forms, Buttons, and Inputs
 
 ## A guide to the form and input styling used across the Zulip codebase.
 
