@@ -4,7 +4,7 @@
 
 ---
 
-The Zulip open source project relies on the Google Font **Sans Source Pro**.
+The Zulip open source project relies on the Google Font **Source Sans Pro**.
 
 ## Font
 
